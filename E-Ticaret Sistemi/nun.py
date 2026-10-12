@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 # Gemini API Yapılandırması
 # API anahtarınızı ortam değişkenine (GEMINI_API_KEY) tanımlayabilir veya doğrudan buraya yazabilirsiniz.
-API_KEY = os.environ.get("GEMINI_API_KEY", "AQ.Ab8RN6KjjDRgiglyM1loBq7OO-nHBAoOKXImvqJGwOnCoavqxg")
+API_KEY = os.environ.get("GEMINI_API_KEY", "")
 genai.configure(api_key=API_KEY)
 
 DOSYA_ADI = "urunler.json"
