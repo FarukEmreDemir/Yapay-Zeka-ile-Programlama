@@ -1,0 +1,25 @@
+YAPAY ZEKA DESTEKLI SQL ASISTANI RAPORU
+=======================================================
+
+1. VERITABANI BILGILERI
+Musteri sayisi: 1000
+Siparis sayisi: 1000
+
+2. GUVENLIK TESTLERI
+SELECT * FROM musteriler -> BASARILI
+DELETE FROM musteriler -> BASARILI
+UPDATE musteriler SET sehir='Ankara' -> BASARILI
+DROP TABLE musteriler -> BASARILI
+INSERT INTO musteriler VALUES (1001, 'Test', 'Ankara') -> BASARILI
+
+3. GUVENLIK IHLALLERI
+Kaydedilmis guvenlik ihlali bulunmamaktadir.
+
+4. SORGU VE HATA KAYITLARI
+Herhangi bir sorgu kaydi bulunmamaktadir.
+
+5. CALISMA SURESI
+Toplam program suresi: 33.5899 saniye
+
+6. GENEL DEGERLENDIRME
+Program SQLite veritabaninda 1000 musteri ve 1000 siparis kaydi olusturmustur. SQL sorgulari guvenlik kontrolunden gecirilmis, SELECT disindaki veritabani islemleri SQLite yetkilendirme mekanizmasiyla engellenmistir. Gemini API araciligiyla dogal dildeki sorular SQL sorgularina donusturulmus ve sorgu sonuclari Pandas DataFrame ile gosterilmistir.
