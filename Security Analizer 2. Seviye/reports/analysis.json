@@ -1,0 +1,14 @@
+{
+  "file": "samples/06_secure_code.py",
+  "finding_count": 1,
+  "findings": [
+    {
+      "type": "Path Traversal (Dizin Geçişi / Eksik Dizin Ayracı Kontrolü)",
+      "severity": "Yüksek",
+      "evidence": "if not tam_yol.startswith(os.path.abspath(izinli_klasor)):",
+      "cause": "tam_yol kontrolünde dizin ayracı kontrol edilmediği için '/var/www/uploads_secret' gibi aynı ön ek ile başlayan kardeş dizinlere erişim bypass edilebilir. Ayrıca os.path.abspath sembolik bağları (symlinks) çözümlemez.",
+      "impact": "Saldırganın izin verilen dizinin dışındaki aynı ön eke sahip kardeş klasörlerdeki veya sembolik bağlar üzerinden sistemdeki hassas dosyaları okumasına yol açabilir.",
+      "secure_code": "from pathlib import Path; def guvenli_dosya_oku(dosya_adi): izinli_klasor = Path('/var/www/uploads').resolve(); tam_yol = (izinli_klasor / dosya_adi).resolve(); if not tam_yol.is_relative_to(izinli_klasor): raise ValueError('Yetkisiz dosya erişim denemesi!'); return tam_yol.read_text(encoding='utf-8') if tam_yol.is_file() else None"
+    }
+  ]
+}
