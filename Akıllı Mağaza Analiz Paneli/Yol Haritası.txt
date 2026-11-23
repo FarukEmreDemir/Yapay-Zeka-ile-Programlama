@@ -1,0 +1,36 @@
+Akıllı Mağaza Analiz Paneli
+
+Yol haritası:
+
+Veri Toplama ve Temizleme
+Satış, ürün, müşteri ve tarih verilerini tek bir temiz veri setinde toplamak; eksik veya hatalı kayıtları ayıklamak.
+
+Veritabanı Kurulumu
+Verileri düz dosya yerine satışlar, ürünler ve müşteriler olarak düzenli tablolara aktarmak.
+
+Temel Metrik ve Grafikler
+Ciro, satış adedi, en çok satan ürünler ve yoğun saat/gün grafiklerini oluşturmak.
+
+Akıllı Analiz Katmanı
+Gelecek dönem satış tahmini, müşteri gruplama veya birlikte alınan ürün önerileri eklemek.
+
+İnteraktif Panel ve Filtreler
+Tarih, kategori veya şube seçtikçe tüm grafik ve önerilerin güncellendiği tek ekranlı arayüz kurmak.
+
+Özet ve Rapor Çıktısı
+Yöneticinin kritik uyarıları görüp kısa bir özet veya rapor alabileceği son dokunuşu eklemek.
+
+
+Yapılması hedeflenen maddeler:
+
+Genel Performans Özeti: Mağazanın toplam cirosunu, satış adedini, kâr oranını ve ortalama sepet tutarını tek ekranda özetlemek.
+
+Ürün ve Stok Analizi: En çok kazandıran yıldız ürünleri ve rafta bekleyip satılmayan ölü stokları otomatik ayıklamak.
+
+Satış Tahmini: Geçmiş verilere bakarak önümüzdeki haftaların satış ve stok ihtiyacını yapay zeka ile öngörmek.
+
+Birlikte Satılan Ürün Önerileri: "Bu ürünü alanlar yanında şunu da alıyor" analizini çıkararak kampanya ve raf düzeni önerisi sunmak.
+
+Müşteri Segmentasyonu: Müşterileri alışveriş sıklığı ve harcama gücüne göre (sadık, yeni, kaybedilme riski olanlar) gruplamak.
+
+Dinamik Filtreleme ve Raporlama: Tarih, şube ve kategori seçimine göre anlık değişen grafikler ve tek tıkla indirilebilir özet rapor sunmak.
